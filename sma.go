@@ -10,7 +10,7 @@ type sma struct {
 	m []float64
 }
 
-func NewSMA(n int) *sma {
+func NewSMA(n int) Indicator {
 	return &sma{
 		n: n,
 		f: float64(n),

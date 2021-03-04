@@ -5,7 +5,7 @@ type ema struct {
 	a float64
 }
 
-func NewEMA(n int) *ema {
+func NewEMA(n int) Indicator {
 	return &ema{
 		a: 2. / (float64(n) + 1),
 	}
